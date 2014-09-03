@@ -16,7 +16,7 @@ Nginx 1.6.1 and Nginx-Gridfs Installation
     `wget http://nginx.org/download/nginx-1.6.1.tar.gz`
 4. Clone this repo by:
     `git clone `
-5. Enter to **gridfs-nginx-plugin** and clone the mongodb C driver repo by:   
+5. (optional - the right driver is in the repo) Enter to **gridfs-nginx-plugin** and clone the mongodb C driver repo by:   
     `git clone https://github.com/eagleas/mongo-c-driver.git`
 6. Step out from **gridfs-nginx-plugin** by:   
     `cd ..`
