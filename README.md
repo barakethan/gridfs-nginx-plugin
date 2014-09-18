@@ -24,6 +24,12 @@ Nginx 1.6.1 and Nginx-Gridfs Installation
     `cd nginx-1.6.1`
 8. Run ./configure with the full path to the **gridfs-nginx-plugin** folder by (make sure that ./configure is runnable - chmod +x ./configure):   
     `./configure --add-module=</path/to/gridfs-nginx-plugin folder>`
+
+FOR MAC:  
+     in the **gridfs-nginx-plugin** folder change in *config* file **CFLAGS** to  
+     `CFLAGS="$CFLAGS -Wno-unused-function -Wno-missing-field-initializers --std=c99 -Isrc"`  
+     `./configure --add-module=</path/to/gridfs-nginx-plugin folder> --with-cc-opt="-Wno-deprecated-declarations"`
+
 9. Run make by:
     `make`
 10. Run make install by:
