@@ -56,7 +56,7 @@ Make Nginx as Linux service
 Configure Nginx to work with MongoDB Girdfs
 ===========================================
 1. Open nginx.conf by:   
-    `cd /usr/local/nginx/conf/nginx.conf`
+    `nano /usr/local/nginx/conf/nginx.conf`
 2. Add the following lines:  
 	
 	`server {`   
