@@ -30,6 +30,9 @@ FOR MAC:
      `CFLAGS="$CFLAGS -Wno-unused-function -Wno-missing-field-initializers --std=c99 -Isrc"`  
      `./configure --add-module=</path/to/gridfs-nginx-plugin folder> --with-cc-opt="-Wno-deprecated-declarations"`
 
+     * sometimes mac show: comparison of integers of different signs: 'size_t'
+      (aka 'unsigned long') and 'int' [-Werror,-Wsign-compare] fix these issues.
+
 9. Run make by:
     `make`
 10. Run make install by:
